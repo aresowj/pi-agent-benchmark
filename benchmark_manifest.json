@@ -1,0 +1,166 @@
+{
+  "base_sha": "636a172d75de2de164df57e291cbd2d7870e44ec",
+  "benchmark_creation_timestamp": "2026-09-11T22:50:48.024918+00:00",
+  "case_start_refs": {
+    "case01": "case01-start",
+    "case02": "case02-start",
+    "case03": "case03-start",
+    "case04": "case04-start",
+    "case05": "case05-start",
+    "case06": "case06-start"
+  },
+  "case_start_shas": {
+    "case01": "636a172d75de2de164df57e291cbd2d7870e44ec",
+    "case02": "636a172d75de2de164df57e291cbd2d7870e44ec",
+    "case03": "636a172d75de2de164df57e291cbd2d7870e44ec",
+    "case04": "636a172d75de2de164df57e291cbd2d7870e44ec",
+    "case05": "636a172d75de2de164df57e291cbd2d7870e44ec",
+    "case06": "636a172d75de2de164df57e291cbd2d7870e44ec"
+  },
+  "harness": {
+    "adapter_command": "python -m harness.agentbench_harness.pi_adapter --request REQUEST.json --result RESULT.json",
+    "contract": "harness/README.md",
+    "default_adapter": "pi",
+    "schema_version": 1,
+    "worker_context_files": false,
+    "worker_extensions": false,
+    "worker_tools": [
+      "read",
+      "bash",
+      "edit",
+      "write"
+    ]
+  },
+  "machine": {
+    "cpu_count": 20,
+    "machine": "x86_64",
+    "processor": "x86_64",
+    "python_implementation": "CPython",
+    "release": "6.6.87.2-microsoft-standard-WSL2",
+    "system": "Linux"
+  },
+  "measurement_policy": {
+    "correctness": "all visible and required hidden tests must pass",
+    "cost": "provider-reported cost when available; local API cost is zero",
+    "input_tokens": "fresh input and cache reads recorded separately; cache reads are not fresh input",
+    "temperature": "0 when supported; otherwise provider default and record it"
+  },
+  "model_slots": [
+    {
+      "alias": "llama.cpp/qwen3.8-27b",
+      "context_window": 65536,
+      "cost_usd_per_million": {
+        "cache_read": 0,
+        "cache_write": 0,
+        "input": 0,
+        "output": 0
+      },
+      "max_tokens": 65536,
+      "model": "qwen3.8-27b",
+      "provider": "llama.cpp",
+      "reasoning": "provider_default/non-reasoning",
+      "slot": "LOCAL_QWEN_Q3",
+      "temperature": null,
+      "temperature_policy": "provider_default (catalog exposes no temperature support)"
+    },
+    {
+      "alias": "openrouter/deepseek/deepseek-v4-flash",
+      "context_window": 1024000,
+      "cost_usd_per_million": {
+        "cache_read": 0.017721,
+        "cache_write": 0,
+        "input": 0.088606,
+        "output": 0.177212
+      },
+      "max_tokens": 384000,
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "openrouter",
+      "reasoning": "provider_default (medium is catalog-null)",
+      "slot": "DEEPSEEK",
+      "temperature": null,
+      "temperature_policy": "provider_default (catalog exposes no temperature support)"
+    },
+    {
+      "alias": "openrouter/z-ai/glm-5.3",
+      "context_window": 1048576,
+      "cost_usd_per_million": {
+        "cache_read": 0.26,
+        "cache_write": 0,
+        "input": 1.4,
+        "output": 4.4
+      },
+      "max_tokens": 943718,
+      "model": "z-ai/glm-5.3",
+      "provider": "openrouter",
+      "reasoning": "provider_default (medium is catalog-null)",
+      "slot": "GLM",
+      "temperature": null,
+      "temperature_policy": "provider_default (catalog exposes no temperature support)"
+    },
+    {
+      "alias": "openai-codex/gpt-5.6-terra",
+      "context_window": 272000,
+      "cost_usd_per_million": {
+        "cache_read": 0.2,
+        "cache_write": 2.5,
+        "input": 2,
+        "output": 12
+      },
+      "max_tokens": 128000,
+      "model": "gpt-5.6-terra",
+      "provider": "openai-codex",
+      "reasoning": "medium requested",
+      "slot": "TERRA",
+      "temperature": null,
+      "temperature_policy": "provider_default (catalog exposes no temperature support)"
+    }
+  ],
+  "prompts": {
+    "cases": {
+      "case01": {
+        "case_prompt_sha256": "68c42ee77619687d32dfe19b55fc8211523f1b859e178b72e43146646ebf04bf",
+        "combined_prompt_sha256": "c2224870acdd469bf3db87b8d784524f46d65352025cf720c8d556c341be9130"
+      },
+      "case02": {
+        "case_prompt_sha256": "2b81f8841b5c159b4f00bc78a025bae12803ea4a553d4f35d387b5df26f2bd49",
+        "combined_prompt_sha256": "89fe70dd6eb33a98b81bb3690b6d99755c043b6a776ac45b6da9511bd362655f"
+      },
+      "case03": {
+        "case_prompt_sha256": "d5753719b07bfb3b2b1bd1f0890c4fe3ddf90cd2c793dbb7e2dbe382b42ced90",
+        "combined_prompt_sha256": "a07605d72715fb3920844c3e28ffe14484ea264901281266b913da174c60f1ea"
+      },
+      "case04": {
+        "case_prompt_sha256": "f52ee30dd9d759242dba5d750214545a63e7fed221c770b4f04bba2c2b4defd3",
+        "combined_prompt_sha256": "9de88aed45239a69606af992d436b5f7a14b73fa62fb2d093d791a789731f78c"
+      },
+      "case05": {
+        "case_prompt_sha256": "a5929194f5cb24fc1a621c267fc31a6345b4300e95904f9eb982b5b4e738527b",
+        "combined_prompt_sha256": "27176058f00fe8623b448f4a9974e4733005bcd211f132c52000ece4f35b4b31"
+      },
+      "case06": {
+        "case_prompt_sha256": "c2eb89807685eb8ee94a8c19e3ae1984f674f3ca900e074380f50bb6de75c7b9",
+        "combined_prompt_sha256": "1246d74adf4b7b52f80153ab191f9c420d22e72df826cb1b3b9ad23011493687"
+      }
+    },
+    "combination": "preamble.rstrip + two newlines + case.rstrip + newline",
+    "hash_algorithm": "sha256",
+    "preamble_sha256": "c287e6ea647117f7ab1709bea4b270bad0d3182017f82edc646c0cd348fec595"
+  },
+  "pytest": {
+    "command": "/home/kagami/venv/bin/python -m pytest",
+    "version": "9.1.1"
+  },
+  "python": {
+    "executable": "/home/kagami/venv/bin/python",
+    "version": "3.12.3"
+  },
+  "run_plan": {
+    "fresh_session_per_run": true,
+    "fresh_worktree_per_run": true,
+    "hidden_evaluators_external": true,
+    "initial_runs": 24,
+    "initial_trials_per_model_case": 1,
+    "selective_reruns_per_relevant_model_case": 2
+  },
+  "schema_version": 1
+}
