@@ -45,9 +45,14 @@
     "input_tokens": "fresh input and cache reads recorded separately; cache reads are not fresh input",
     "temperature": "0 when supported; otherwise provider default and record it"
   },
+  "model_discovery": {
+    "command": "pi --offline --list-models <slot model>",
+    "local_provider": "llama-server=http://127.0.0.1:8080",
+    "selected_aliases_are_exact": true
+  },
   "model_slots": [
     {
-      "alias": "llama.cpp/qwen3.8-27b",
+      "alias": "llama-server=http://127.0.0.1:8080/qwen3.8-27b",
       "context_window": 65536,
       "cost_usd_per_million": {
         "cache_read": 0,
@@ -57,23 +62,23 @@
       },
       "max_tokens": 65536,
       "model": "qwen3.8-27b",
-      "provider": "llama.cpp",
-      "reasoning": "provider_default/non-reasoning",
+      "provider": "llama-server=http://127.0.0.1:8080",
+      "reasoning": "provider_default; Pi local catalog reports thinking yes",
       "slot": "LOCAL_QWEN_Q3",
       "temperature": null,
       "temperature_policy": "provider_default (catalog exposes no temperature support)"
     },
     {
-      "alias": "openrouter/deepseek/deepseek-v4-flash",
-      "context_window": 1024000,
+      "alias": "openrouter/deepseek/deepseek-v4.1-flash",
+      "context_window": 1048576,
       "cost_usd_per_million": {
-        "cache_read": 0.017721,
+        "cache_read": 0.003,
         "cache_write": 0,
-        "input": 0.088606,
-        "output": 0.177212
+        "input": 0.15,
+        "output": 0.6
       },
       "max_tokens": 384000,
-      "model": "deepseek/deepseek-v4-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
       "provider": "openrouter",
       "reasoning": "provider_default (medium is catalog-null)",
       "slot": "DEEPSEEK",
