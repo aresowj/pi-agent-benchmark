@@ -1,5 +1,5 @@
 {
-  "base_sha": "636a172d75de2de164df57e291cbd2d7870e44ec",
+  "base_sha": "dff348cfb05670eb9564179604ba2ac7b9f2407c",
   "benchmark_creation_timestamp": "2026-09-11T22:50:48.024918+00:00",
   "case_start_refs": {
     "case01": "case01-start",
@@ -10,17 +10,18 @@
     "case06": "case06-start"
   },
   "case_start_shas": {
-    "case01": "636a172d75de2de164df57e291cbd2d7870e44ec",
-    "case02": "636a172d75de2de164df57e291cbd2d7870e44ec",
-    "case03": "636a172d75de2de164df57e291cbd2d7870e44ec",
-    "case04": "636a172d75de2de164df57e291cbd2d7870e44ec",
-    "case05": "636a172d75de2de164df57e291cbd2d7870e44ec",
-    "case06": "636a172d75de2de164df57e291cbd2d7870e44ec"
+    "case01": "dff348cfb05670eb9564179604ba2ac7b9f2407c",
+    "case02": "dff348cfb05670eb9564179604ba2ac7b9f2407c",
+    "case03": "dff348cfb05670eb9564179604ba2ac7b9f2407c",
+    "case04": "dff348cfb05670eb9564179604ba2ac7b9f2407c",
+    "case05": "dff348cfb05670eb9564179604ba2ac7b9f2407c",
+    "case06": "dff348cfb05670eb9564179604ba2ac7b9f2407c"
   },
   "harness": {
     "adapter_command": "python -m harness.agentbench_harness.pi_adapter --request REQUEST.json --result RESULT.json",
     "contract": "harness/README.md",
     "default_adapter": "pi",
+    "pi_adapter_extension": "explicit pi-llama-cpp extension; path supplied by adapter environment/default",
     "schema_version": 1,
     "worker_context_files": false,
     "worker_extensions": false,
