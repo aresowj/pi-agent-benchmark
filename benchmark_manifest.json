@@ -40,6 +40,14 @@
     "release": "6.6.87.2-microsoft-standard-WSL2",
     "system": "Linux"
   },
+  "matrix_extensions": [
+    {
+      "added_at": "2026-09-11T23:49:37.332050+00:00",
+      "preserves_existing_runs": true,
+      "slot": "LUNA_MAX",
+      "trials_per_case": 1
+    }
+  ],
   "measurement_policy": {
     "correctness": "all visible and required hidden tests must pass",
     "cost": "provider-reported cost when available; local API cost is zero",
@@ -119,6 +127,23 @@
       "slot": "TERRA",
       "temperature": null,
       "temperature_policy": "provider_default (catalog exposes no temperature support)"
+    },
+    {
+      "alias": "openai-codex/gpt-5.6-luna",
+      "context_window": 272000,
+      "cost_usd_per_million": {
+        "cache_read": 0.02,
+        "cache_write": 0.25,
+        "input": 0.2,
+        "output": 1.2
+      },
+      "max_tokens": 128000,
+      "model": "gpt-5.6-luna",
+      "provider": "openai-codex",
+      "reasoning": "max requested",
+      "slot": "LUNA_MAX",
+      "temperature": null,
+      "temperature_policy": "provider_default (catalog exposes no temperature support)"
     }
   ],
   "prompts": {
@@ -166,7 +191,10 @@
     "hidden_evaluators_external": true,
     "initial_runs": 24,
     "initial_trials_per_model_case": 1,
-    "selective_reruns_per_relevant_model_case": 2
+    "matrix_extension_runs": 6,
+    "original_four_model_runs": 24,
+    "selective_reruns_per_relevant_model_case": 2,
+    "total_runs_after_extension": 30
   },
   "schema_version": 1
 }
