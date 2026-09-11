@@ -81,6 +81,10 @@ def _usage(session_path: Path | None) -> tuple[Usage, int, int]:
 
 
 def _command(request: Any) -> list[str]:
+    llama_extension = os.environ.get(
+        "AGENTBENCH_PI_LLAMA_EXTENSION",
+        "/home/kagami/.pi/agent/npm/node_modules/pi-llama-cpp/src/index.ts",
+    )
     command = [
         "pi",
         "--provider", request.model.provider,
@@ -91,6 +95,7 @@ def _command(request: Any) -> list[str]:
         "--session-id", request.run_id,
         "--no-context-files",
         "--no-extensions",
+        "--extension", llama_extension,
         "--no-skills",
         "--no-prompt-templates",
         "--no-themes",
