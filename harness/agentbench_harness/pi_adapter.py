@@ -120,11 +120,24 @@ def run(request_path: str, result_path: str) -> int:
     stopped_reason: str | None = None
     error: str | None = None
     try:
+        worker_environment = {
+            key: value
+            for key, value in os.environ.items()
+            if key not in {
+                "PI_SESSION_FILE",
+                "PI_SESSION_ID",
+                "PI_SUBAGENT_PARENT_SESSION",
+                "PI_PROVIDER",
+                "PI_MODEL",
+                "PI_REASONING_LEVEL",
+            }
+        }
+        worker_environment.update(request.environment)
         with log_path.open("w", encoding="utf-8") as log:
             completed = subprocess.run(
                 _command(request),
                 cwd=request.worktree,
-                env={**os.environ, **request.environment},
+                env=worker_environment,
                 stdout=log,
                 stderr=subprocess.STDOUT,
                 check=False,
