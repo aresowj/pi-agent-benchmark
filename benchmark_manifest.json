@@ -1,5 +1,5 @@
 {
-  "base_sha": "dff348cfb05670eb9564179604ba2ac7b9f2407c",
+  "base_sha": "2d91e72b58ce134907ce083e5520e75e41a4c89e",
   "benchmark_creation_timestamp": "2026-09-11T22:50:48.024918+00:00",
   "case_start_refs": {
     "case01": "case01-start",
@@ -10,12 +10,12 @@
     "case06": "case06-start"
   },
   "case_start_shas": {
-    "case01": "dff348cfb05670eb9564179604ba2ac7b9f2407c",
-    "case02": "dff348cfb05670eb9564179604ba2ac7b9f2407c",
-    "case03": "dff348cfb05670eb9564179604ba2ac7b9f2407c",
-    "case04": "dff348cfb05670eb9564179604ba2ac7b9f2407c",
-    "case05": "dff348cfb05670eb9564179604ba2ac7b9f2407c",
-    "case06": "dff348cfb05670eb9564179604ba2ac7b9f2407c"
+    "case01": "2d91e72b58ce134907ce083e5520e75e41a4c89e",
+    "case02": "2d91e72b58ce134907ce083e5520e75e41a4c89e",
+    "case03": "2d91e72b58ce134907ce083e5520e75e41a4c89e",
+    "case04": "2d91e72b58ce134907ce083e5520e75e41a4c89e",
+    "case05": "2d91e72b58ce134907ce083e5520e75e41a4c89e",
+    "case06": "2d91e72b58ce134907ce083e5520e75e41a4c89e"
   },
   "harness": {
     "adapter_command": "python -m harness.agentbench_harness.pi_adapter --request REQUEST.json --result RESULT.json",
