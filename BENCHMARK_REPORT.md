@@ -1,6 +1,6 @@
 # Agent benchmark report
 
-Generated: 2026-09-12T04:30:43.174764+00:00
+Generated: 2026-09-12T06:44:25.646680+00:00
 Frozen base/case SHA: `2d91e72b58ce134907ce083e5520e75e41a4c89e`
 Repository: private `https://github.com/aresowj/pi-agent-benchmark`
 
@@ -32,7 +32,7 @@ Case 3 (duplicate delivery) is designated Medium/Hard and is counted in Hard her
 | TERRA | 6/6 | 1/1 | 1/1 | 3/3 | 1/1 | 384.5s | 16,375 | $0.4491 |
 
 LUNA_MAX extension (requested after the original four-model matrix): `6/6` pass@1, 380.2s total, 14,027 output tokens, $0.0422 cloud cost. It is reported separately and does not alter the required four-model comparison.
-SONNET_5 extension: `6/6` pass@1, 352.2s total, 28,468 output tokens, $0.6568 cloud cost. It is reported separately and does not alter the required four-model comparison.
+SONNET_5 extension: `6/6` pass@1, 352.2s total, 28,468 output tokens, $0.6568 cloud cost. Token totals: 146 fresh input, 575,601 cache-read input, 28,468 output (575,747 total processed input). It is reported separately and does not alter the required four-model comparison.
 
 ## Detailed initial runs
 
