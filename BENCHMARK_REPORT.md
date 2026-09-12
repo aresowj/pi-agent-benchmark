@@ -10,6 +10,7 @@ The original matrix was 4 models × 6 cases = 24 pass@1 runs. The requested `LUN
 Evaluator integrity note: preflight exposed evaluator-only assumptions in the first implementation of cases 4–6. Before final scoring, those external evaluators were corrected without changing any worker worktree or prompts, then all 30 worktrees were re-evaluated. The exact corrected evaluator hashes and the correction note are in `evaluators/evaluator_manifest.json`; treat the case-5 scaling timing as a frozen-base calibration recorded in that manifest.
 
 Model aliases:
+
 - `LOCAL_QWEN_Q3`: `llama-server=http://127.0.0.1:8080/qwen3.8-27b`
 - `DEEPSEEK`: `openrouter/deepseek/deepseek-v4.1-flash`
 - `GLM`: `openrouter/z-ai/glm-5.3`
@@ -24,7 +25,7 @@ Pass@1 is strict autonomous outcome: visible and hidden tests must pass **and** 
 Case 3 (duplicate delivery) is designated Medium/Hard and is counted in Hard here so the buckets remain disjoint.
 
 | Model | Pass@1 | Easy | Medium | Hard | Very hard | Total time | Output tokens | Cloud cost |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | LOCAL_QWEN_Q3 | 6/6 | 1/1 | 1/1 | 3/3 | 1/1 | 1145.7s | 45,370 | $0.0000 |
 | DEEPSEEK | 6/6 | 1/1 | 1/1 | 3/3 | 1/1 | 1184.0s | 56,949 | $0.0668 |
 | GLM | 5/6 | 1/1 | 0/1 | 3/3 | 1/1 | 374.5s | 39,821 | $0.4219 |
@@ -35,7 +36,7 @@ LUNA_MAX extension (requested after the original four-model matrix): `6/6` pass@
 ## Detailed initial runs
 
 | Case | Model | Pass | Visible tests | Hidden tests | Time | Fresh input | Cache read | Output | Cost | Diff +/- | Tools | Worker test invocations |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | case01 | LOCAL_QWEN_Q3 | PASS | 19 | 10 | 53.7s | 6,852 | 64,189 | 3,077 | $0.0000 | +58/-6 | 13 | 4 |
 | case01 | DEEPSEEK | PASS | 25 | 10 | 117.0s | 10,647 | 98,560 | 3,510 | $0.0040 | +66/-6 | 21 | 5 |
 | case01 | GLM | PASS | 32 | 10 | 17.0s | 5,372 | 72,832 | 2,662 | $0.0382 | +76/-6 | 17 | 5 |
@@ -72,7 +73,7 @@ LUNA_MAX extension (requested after the original four-model matrix): `6/6` pass@
 Only pass@1-successful runs are included below; failed/infrastructure-run costs are excluded from cost per successful task.
 
 | Model | Successful tasks | Median time | Median output / task | Median fresh input / task | Median cache read / task | Cost / successful task | Successful tasks / hour |
-|---|---:|---:|---:|---:|---:|---:|---:|
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | LOCAL_QWEN_Q3 | 6 | 154.9s | 6,434 | 5,238 | 121,086 | $0.0000 | 18.85 |
 | DEEPSEEK | 6 | 130.1s | 10,580 | 31,514 | 198,272 | $0.0111 | 18.24 |
 | GLM | 5 | 56.2s | 7,494 | 6,356 | 141,312 | $0.0824 | 51.50 |
