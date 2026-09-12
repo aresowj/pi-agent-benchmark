@@ -1,6 +1,6 @@
 # Agent benchmark report
 
-Generated: 2026-09-12T04:27:58.557905+00:00
+Generated: 2026-09-12T04:28:37.319296+00:00
 Frozen base/case SHA: `2d91e72b58ce134907ce083e5520e75e41a4c89e`
 Repository: private `https://github.com/aresowj/pi-agent-benchmark`
 
@@ -113,9 +113,9 @@ No correctness, performance, concurrency, loop/stall, or premature-stop failure 
 
 ## Conclusions
 
-1. **Does LOCAL_QWEN_Q3 match cloud models on easy work?** Yes in this sample: 1/1 on case01, equal to DeepSeek, Terra, and Luna; GLM also passed its completed easy run.
+1. **Does LOCAL_QWEN_Q3 match cloud models on easy work?** Yes in this sample: 1/1 on case01, equal to DeepSeek, Terra, Luna, and Sonnet 5; GLM also passed its completed easy run.
 2. **Where does LOCAL_QWEN_Q3 begin losing materially?** Nowhere observed: it passed all six cases. This is a six-case, one-trial result, not evidence of parity at larger difficulty or sample sizes.
-3. **Does DeepSeek materially improve quality over LOCAL_QWEN_Q3?** No observed quality improvement: both passed 6/6. DeepSeek used cloud time/cost, so its operational advantage is not established by correctness here.
+3. **Do DeepSeek or Sonnet 5 materially improve quality over LOCAL_QWEN_Q3?** No observed quality improvement: both passed all six cases, as did Local. DeepSeek and Sonnet used cloud time/cost, so their operational advantage is not established by correctness here.
 4. **Does GLM materially improve over DeepSeek?** No quality conclusion is supported. GLM passed its five completed cases, but case02 trial1 was an OpenRouter rate-limit failure; the two selective reruns passed.
 5. **Does Terra Medium or Sonnet 5 materially outperform cheaper models on hard work?** No correctness advantage was observed: Terra, Local, DeepSeek, Luna, and Sonnet all passed cases03–06. Speed/cost differences are descriptive only, not a proven quality advantage.
 6. **How many additional successful tasks does each more expensive tier buy?** Zero additional code-correct tasks were demonstrated among completed runs; every completed worker passed its case. GLM had one operational loss from infrastructure, not a measured reasoning failure.
