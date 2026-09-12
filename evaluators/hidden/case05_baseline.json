@@ -1,0 +1,6 @@
+{
+  "workload": "performance_workload.py",
+  "small_seconds": 0.09229944800608791,
+  "large_seconds": 3.1083367920073215,
+  "scaling_large_seconds": 1.0569800969969947
+}

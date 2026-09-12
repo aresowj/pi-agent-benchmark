@@ -1,0 +1,100 @@
+[
+  {
+    "case_id": "case02",
+    "diff": {
+      "deletions": 2,
+      "files_changed": 2,
+      "insertions": 42,
+      "untracked_files": 0
+    },
+    "hidden": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 3,
+      "return_code": 0,
+      "skipped": 0,
+      "timed_out": false
+    },
+    "model": {
+      "context_limit": 1048576,
+      "model": "z-ai/glm-5.3",
+      "provider": "openrouter",
+      "slot": "GLM",
+      "temperature": null,
+      "temperature_supported": false,
+      "thinking": null
+    },
+    "pass": true,
+    "run_id": "glm-case02-trial2",
+    "usage": {
+      "cache_read_tokens": 33664,
+      "cache_write_tokens": 0,
+      "cost_usd": 0.02219544,
+      "fresh_input_tokens": 3926,
+      "output_tokens": 1806,
+      "reasoning_tokens": 294
+    },
+    "visible": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 17,
+      "return_code": 0,
+      "skipped": 0,
+      "timed_out": false
+    },
+    "wall_seconds": 18.36747683599242,
+    "worker_exit_state": "completed",
+    "worker_stopped_reason": null,
+    "worker_test_invocations": 4,
+    "worker_tool_calls": 10
+  },
+  {
+    "case_id": "case02",
+    "diff": {
+      "deletions": 2,
+      "files_changed": 2,
+      "insertions": 42,
+      "untracked_files": 0
+    },
+    "hidden": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 3,
+      "return_code": 0,
+      "skipped": 0,
+      "timed_out": false
+    },
+    "model": {
+      "context_limit": 1048576,
+      "model": "z-ai/glm-5.3",
+      "provider": "openrouter",
+      "slot": "GLM",
+      "temperature": null,
+      "temperature_supported": false,
+      "thinking": null
+    },
+    "pass": true,
+    "run_id": "glm-case02-trial3",
+    "usage": {
+      "cache_read_tokens": 23360,
+      "cache_write_tokens": 0,
+      "cost_usd": 0.0180434,
+      "fresh_input_tokens": 2987,
+      "output_tokens": 1770,
+      "reasoning_tokens": 253
+    },
+    "visible": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 17,
+      "return_code": 0,
+      "skipped": 0,
+      "timed_out": false
+    },
+    "wall_seconds": 11.342236980999587,
+    "worker_exit_state": "completed",
+    "worker_stopped_reason": null,
+    "worker_test_invocations": 3,
+    "worker_tool_calls": 9
+  }
+]
