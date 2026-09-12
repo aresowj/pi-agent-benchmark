@@ -1,6 +1,6 @@
 # Agent benchmark report
 
-Generated: 2026-09-12T00:16:41.080051+00:00
+Generated: 2026-09-12T00:24:50.636672+00:00
 Frozen base/case SHA: `2d91e72b58ce134907ce083e5520e75e41a4c89e`
 Repository: private `https://github.com/aresowj/pi-agent-benchmark`
 
@@ -29,7 +29,8 @@ Case 3 (duplicate delivery) is designated Medium/Hard and is counted in Hard her
 | DEEPSEEK | 6/6 | 1/1 | 1/1 | 3/3 | 1/1 | 1184.0s | 56,949 | $0.0668 |
 | GLM | 5/6 | 1/1 | 0/1 | 3/3 | 1/1 | 374.5s | 39,821 | $0.4219 |
 | TERRA | 6/6 | 1/1 | 1/1 | 3/3 | 1/1 | 384.5s | 16,375 | $0.4491 |
-| LUNA_MAX | 6/6 | 1/1 | 1/1 | 3/3 | 1/1 | 380.2s | 14,027 | $0.0422 |
+
+LUNA_MAX extension (requested after the original four-model matrix): `6/6` pass@1, 380.2s total, 14,027 output tokens, $0.0422 cloud cost. It is reported separately and does not alter the required four-model comparison.
 
 ## Detailed initial runs
 
@@ -76,13 +77,14 @@ Only pass@1-successful runs are included below; failed/infrastructure-run costs 
 | DEEPSEEK | 6 | 130.1s | 10,580 | 31,514 | 198,272 | $0.0111 | 18.24 |
 | GLM | 5 | 56.2s | 7,494 | 6,356 | 141,312 | $0.0824 | 51.50 |
 | TERRA | 6 | 68.1s | 2,806 | 14,468 | 37,120 | $0.0748 | 56.18 |
-| LUNA_MAX | 6 | 69.4s | 2,572 | 15,569 | 36,096 | $0.0070 | 56.82 |
+
+LUNA_MAX extension efficiency: 6 successful tasks; median 69.4s; median output 2,572; cost per successful task $0.0070. It is supplementary, not part of the required four-model efficiency ranking.
 
 For local inference, API cost is $0. Its pass@1-successful aggregate was 39.6 output tokens/sec across the six runs; electricity is not estimated.
 
 ## Selective rerun / pass@3
 
-Only GLM case02 was rerun because trial 1 hit an infrastructure rate limit. Trial 2 and trial 3 were fresh independent worktrees/sessions and both passed. The requested attempt-based GLM case02 pass@3 outcome is PASS (2 passing attempts after 1 infrastructure failure); this is not a three-valid-code-trial statistical estimate. No other extra worker trials were run.
+Only GLM case02 was rerun because trial 1 hit an infrastructure rate limit. Trial 2 and trial 3 were fresh independent worktrees/sessions and both passed. Under the strict autonomous-attempt scoring used for pass@1, the requested GLM case02 pass@3 outcome is PASS (2 passing attempts after 1 failed infrastructure attempt). No other extra worker trials were run; non-rerun cases have no pass@3 estimate by design.
 
 | Model | Case | Trial 1 | Trial 2 | Trial 3 | Pass@3 (attempt-based) |
 |---|---|---:|---:|---:|---:|
