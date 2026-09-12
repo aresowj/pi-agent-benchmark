@@ -46,6 +46,12 @@
       "preserves_existing_runs": true,
       "slot": "LUNA_MAX",
       "trials_per_case": 1
+    },
+    {
+      "added_at": "2026-09-12T04:19:02+00:00",
+      "preserves_existing_runs": true,
+      "slot": "SONNET_5",
+      "trials_per_case": 1
     }
   ],
   "measurement_policy": {
@@ -144,6 +150,23 @@
       "slot": "LUNA_MAX",
       "temperature": null,
       "temperature_policy": "provider_default (catalog exposes no temperature support)"
+    },
+    {
+      "alias": "openrouter/anthropic/claude-sonnet-5",
+      "context_window": 1000000,
+      "cost_usd_per_million": {
+        "cache_read": 0.2,
+        "cache_write": 2.5,
+        "input": 2,
+        "output": 10
+      },
+      "max_tokens": 128000,
+      "model": "anthropic/claude-sonnet-5",
+      "provider": "openrouter",
+      "reasoning": "provider_default (no explicit thinking level requested)",
+      "slot": "SONNET_5",
+      "temperature": null,
+      "temperature_policy": "provider_default (catalog exposes no temperature support)"
     }
   ],
   "prompts": {
@@ -191,10 +214,10 @@
     "hidden_evaluators_external": true,
     "initial_runs": 24,
     "initial_trials_per_model_case": 1,
-    "matrix_extension_runs": 6,
+    "matrix_extension_runs": 12,
     "original_four_model_runs": 24,
     "selective_reruns_per_relevant_model_case": 2,
-    "total_runs_after_extension": 30
+    "total_runs_after_extension": 36
   },
   "schema_version": 1
 }
