@@ -1178,6 +1178,300 @@
   {
     "case_id": "case01",
     "diff": {
+      "deletions": 5,
+      "files_changed": 3,
+      "insertions": 40,
+      "untracked_files": 0
+    },
+    "hidden": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 10,
+      "return_code": 0,
+      "skipped": 0,
+      "timed_out": false
+    },
+    "model": {
+      "context_limit": 1000000,
+      "model": "anthropic/claude-sonnet-5",
+      "provider": "openrouter",
+      "slot": "SONNET_5",
+      "temperature": null,
+      "temperature_supported": false,
+      "thinking": null
+    },
+    "pass": true,
+    "run_id": "sonnet_5-case01-trial1",
+    "usage": {
+      "cache_read_tokens": 125135,
+      "cache_write_tokens": 13829,
+      "cost_usd": 0.12848700000000002,
+      "fresh_input_tokens": 27,
+      "output_tokens": 4809,
+      "reasoning_tokens": 203
+    },
+    "visible": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 22,
+      "return_code": 0,
+      "skipped": 0,
+      "timed_out": false
+    },
+    "wall_seconds": 56.941228823998244,
+    "worker_exit_state": "completed",
+    "worker_stopped_reason": null,
+    "worker_test_invocations": 3,
+    "worker_tool_calls": 15
+  },
+  {
+    "case_id": "case02",
+    "diff": {
+      "deletions": 2,
+      "files_changed": 2,
+      "insertions": 14,
+      "untracked_files": 0
+    },
+    "hidden": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 3,
+      "return_code": 0,
+      "skipped": 0,
+      "timed_out": false
+    },
+    "model": {
+      "context_limit": 1000000,
+      "model": "anthropic/claude-sonnet-5",
+      "provider": "openrouter",
+      "slot": "SONNET_5",
+      "temperature": null,
+      "temperature_supported": false,
+      "thinking": null
+    },
+    "pass": true,
+    "run_id": "sonnet_5-case02-trial1",
+    "usage": {
+      "cache_read_tokens": 18348,
+      "cache_write_tokens": 3235,
+      "cost_usd": 0.026011600000000003,
+      "fresh_input_tokens": 11,
+      "output_tokens": 938,
+      "reasoning_tokens": 9
+    },
+    "visible": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 14,
+      "return_code": 0,
+      "skipped": 0,
+      "timed_out": false
+    },
+    "wall_seconds": 16.298191912996117,
+    "worker_exit_state": "completed",
+    "worker_stopped_reason": null,
+    "worker_test_invocations": 2,
+    "worker_tool_calls": 6
+  },
+  {
+    "case_id": "case03",
+    "diff": {
+      "deletions": 6,
+      "files_changed": 4,
+      "insertions": 54,
+      "untracked_files": 0
+    },
+    "hidden": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 3,
+      "return_code": 0,
+      "skipped": 0,
+      "timed_out": false
+    },
+    "model": {
+      "context_limit": 1000000,
+      "model": "anthropic/claude-sonnet-5",
+      "provider": "openrouter",
+      "slot": "SONNET_5",
+      "temperature": null,
+      "temperature_supported": false,
+      "thinking": null
+    },
+    "pass": true,
+    "run_id": "sonnet_5-case03-trial1",
+    "usage": {
+      "cache_read_tokens": 148348,
+      "cache_write_tokens": 14619,
+      "cost_usd": 0.1438636,
+      "fresh_input_tokens": 29,
+      "output_tokens": 5566,
+      "reasoning_tokens": 1311
+    },
+    "visible": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 14,
+      "return_code": 0,
+      "skipped": 0,
+      "timed_out": false
+    },
+    "wall_seconds": 71.96654941499582,
+    "worker_exit_state": "completed",
+    "worker_stopped_reason": null,
+    "worker_test_invocations": 4,
+    "worker_tool_calls": 16
+  },
+  {
+    "case_id": "case04",
+    "diff": {
+      "deletions": 105,
+      "files_changed": 3,
+      "insertions": 145,
+      "untracked_files": 1
+    },
+    "hidden": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 7,
+      "return_code": 0,
+      "skipped": 0,
+      "timed_out": false
+    },
+    "model": {
+      "context_limit": 1000000,
+      "model": "anthropic/claude-sonnet-5",
+      "provider": "openrouter",
+      "slot": "SONNET_5",
+      "temperature": null,
+      "temperature_supported": false,
+      "thinking": null
+    },
+    "pass": true,
+    "run_id": "sonnet_5-case04-trial1",
+    "usage": {
+      "cache_read_tokens": 120553,
+      "cache_write_tokens": 13347,
+      "cost_usd": 0.1424726,
+      "fresh_input_tokens": 27,
+      "output_tokens": 6492,
+      "reasoning_tokens": 1789
+    },
+    "visible": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 18,
+      "return_code": 0,
+      "skipped": 0,
+      "timed_out": false
+    },
+    "wall_seconds": 70.9145313249901,
+    "worker_exit_state": "completed",
+    "worker_stopped_reason": null,
+    "worker_test_invocations": 5,
+    "worker_tool_calls": 16
+  },
+  {
+    "case_id": "case05",
+    "diff": {
+      "deletions": 4,
+      "files_changed": 2,
+      "insertions": 96,
+      "untracked_files": 0
+    },
+    "hidden": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 3,
+      "return_code": 0,
+      "skipped": 0,
+      "timed_out": false
+    },
+    "model": {
+      "context_limit": 1000000,
+      "model": "anthropic/claude-sonnet-5",
+      "provider": "openrouter",
+      "slot": "SONNET_5",
+      "temperature": null,
+      "temperature_supported": false,
+      "thinking": null
+    },
+    "pass": true,
+    "run_id": "sonnet_5-case05-trial1",
+    "usage": {
+      "cache_read_tokens": 89255,
+      "cache_write_tokens": 9252,
+      "cost_usd": 0.11594700000000004,
+      "fresh_input_tokens": 29,
+      "output_tokens": 6103,
+      "reasoning_tokens": 753
+    },
+    "visible": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 18,
+      "return_code": 0,
+      "skipped": 0,
+      "timed_out": false
+    },
+    "wall_seconds": 73.22764577198541,
+    "worker_exit_state": "completed",
+    "worker_stopped_reason": null,
+    "worker_test_invocations": 7,
+    "worker_tool_calls": 14
+  },
+  {
+    "case_id": "case06",
+    "diff": {
+      "deletions": 11,
+      "files_changed": 2,
+      "insertions": 80,
+      "untracked_files": 0
+    },
+    "hidden": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 4,
+      "return_code": 0,
+      "skipped": 0,
+      "timed_out": false
+    },
+    "model": {
+      "context_limit": 1000000,
+      "model": "anthropic/claude-sonnet-5",
+      "provider": "openrouter",
+      "slot": "SONNET_5",
+      "temperature": null,
+      "temperature_supported": false,
+      "thinking": null
+    },
+    "pass": true,
+    "run_id": "sonnet_5-case06-trial1",
+    "usage": {
+      "cache_read_tokens": 73962,
+      "cache_write_tokens": 9886,
+      "cost_usd": 0.09998240000000003,
+      "fresh_input_tokens": 23,
+      "output_tokens": 4560,
+      "reasoning_tokens": 934
+    },
+    "visible": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 14,
+      "return_code": 0,
+      "skipped": 0,
+      "timed_out": false
+    },
+    "wall_seconds": 62.85149617999559,
+    "worker_exit_state": "completed",
+    "worker_stopped_reason": null,
+    "worker_test_invocations": 4,
+    "worker_tool_calls": 11
+  },
+  {
+    "case_id": "case01",
+    "diff": {
       "deletions": 8,
       "files_changed": 4,
       "insertions": 33,

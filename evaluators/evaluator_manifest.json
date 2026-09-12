@@ -3,28 +3,33 @@
   "corrected_revision_note": "After preflight evaluation, fixed evaluator-only assumptions: case04 patches stdlib sleep before imports; case05 scaling workload avoids output-cardinality distortion and compares the large workload against its frozen-base timing; case06 uses SQLite authorizer barriers so candidate SQL remains unmodified. No worker worktree was changed.",
   "created_at": "2026-09-12T00:16:24.749886+00:00",
   "evaluator_files": {
-    "evaluators/hidden/case05_baseline.json": "eb458a86fa0be05a8520a73bb6e0b2e31c9fae69ebd6852222bb72eacd082bc1",
-    "evaluators/hidden/conftest.py": "a67a638152294fe7df0bfbdf5c4153decfce7b0510533b3113746747acfce6e5",
-    "evaluators/hidden/performance_workload.py": "cad0d31e727c821f8eac85e6187d8ae143872206f3e72c50262a7feb702df1d9",
-    "evaluators/hidden/test_case01_configuration.py": "d6f5db7128b4966549e8360cfd2469d61689c85267c4e0b1e1d022f49ad55288",
-    "evaluators/hidden/test_case02_quiet_hours.py": "bbfec9afe4e47cfd80ecc558b7092bdf8e84a68dad54106c9a180fc41f9f4fbb",
-    "evaluators/hidden/test_case03_idempotency.py": "1b45249e0eda05caae6bc22836cda48dc4682fdf7f08c8abd7525d3e2eaf465c",
-    "evaluators/hidden/test_case04_retry_consolidation.py": "08b6c4a8be78cdfe0e3c0465fa78f8d6eba852e669e1f97252b62df9d154db46",
-    "evaluators/hidden/test_case05_performance.py": "e4a918c16bbce1be31af608e76fb587bc3917f13f09e97307fec8329450d7f6a",
-    "evaluators/hidden/test_case06_concurrency.py": "2c5a432d4362257bd1a4cfe21317058431d7ab8337d623bb2f861e33a7bac3ab"
+    "baselines/case05.json": "eb458a86fa0be05a8520a73bb6e0b2e31c9fae69ebd6852222bb72eacd082bc1",
+    "hidden_tests/conftest.py": "a67a638152294fe7df0bfbdf5c4153decfce7b0510533b3113746747acfce6e5",
+    "hidden_tests/performance_workload.py": "cad0d31e727c821f8eac85e6187d8ae143872206f3e72c50262a7feb702df1d9",
+    "hidden_tests/test_case01_configuration.py": "d6f5db7128b4966549e8360cfd2469d61689c85267c4e0b1e1d022f49ad55288",
+    "hidden_tests/test_case02_quiet_hours.py": "bbfec9afe4e47cfd80ecc558b7092bdf8e84a68dad54106c9a180fc41f9f4fbb",
+    "hidden_tests/test_case03_idempotency.py": "1b45249e0eda05caae6bc22836cda48dc4682fdf7f08c8abd7525d3e2eaf465c",
+    "hidden_tests/test_case04_retry_consolidation.py": "08b6c4a8be78cdfe0e3c0465fa78f8d6eba852e669e1f97252b62df9d154db46",
+    "hidden_tests/test_case05_performance.py": "e4a918c16bbce1be31af608e76fb587bc3917f13f09e97307fec8329450d7f6a",
+    "hidden_tests/test_case06_concurrency.py": "2c5a432d4362257bd1a4cfe21317058431d7ab8337d623bb2f861e33a7bac3ab"
   },
-  "initial_run_count": 30,
+  "initial_run_count": 36,
   "machine": {
     "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
     "python": "3.12.3"
   },
+  "matrix_extensions": [
+    "LUNA_MAX",
+    "SONNET_5"
+  ],
   "performance_baseline": {
     "large_seconds": 3.1083367920073215,
     "scaling_large_seconds": 1.0569800969969947,
     "small_seconds": 0.09229944800608791,
     "workload": "performance_workload.py"
   },
-  "repository_copy": "evaluators/hidden",
   "rerun_count": 2,
-  "schema_version": 1
+  "schema_version": 1,
+  "sonnet_alias": "openrouter/anthropic/claude-sonnet-5",
+  "sonnet_trials_per_case": 1
 }
