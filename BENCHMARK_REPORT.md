@@ -1,6 +1,6 @@
 # Agent benchmark report
 
-Generated: 2026-09-12T04:28:37.319296+00:00
+Generated: 2026-09-12T04:30:43.174764+00:00
 Frozen base/case SHA: `2d91e72b58ce134907ce083e5520e75e41a4c89e`
 Repository: private `https://github.com/aresowj/pi-agent-benchmark`
 
@@ -22,7 +22,7 @@ Pass@1 is strict autonomous outcome: visible and hidden tests must pass **and** 
 
 ## Overall pass@1
 
-Case 3 (duplicate delivery) is designated Medium/Hard and is counted in Hard here so the buckets remain disjoint.
+Case 3 (duplicate delivery) is designated Medium/Hard and is counted in Hard here so the buckets remain disjoint. Aggregate times and costs use unrounded source values; displayed per-run rows are rounded.
 
 | Model | Pass@1 | Easy | Medium | Hard | Very hard | Total time | Output tokens | Cloud cost |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -120,7 +120,7 @@ No correctness, performance, concurrency, loop/stall, or premature-stop failure 
 5. **Does Terra Medium or Sonnet 5 materially outperform cheaper models on hard work?** No correctness advantage was observed: Terra, Local, DeepSeek, Luna, and Sonnet all passed cases03–06. Speed/cost differences are descriptive only, not a proven quality advantage.
 6. **How many additional successful tasks does each more expensive tier buy?** Zero additional code-correct tasks were demonstrated among completed runs; every completed worker passed its case. GLM had one operational loss from infrastructure, not a measured reasoning failure.
 7. **Does a slower stronger model finish sooner by making fewer mistakes?** Not demonstrated. All completed slots made no correctness mistakes in this matrix, so there is no error-avoidance effect to attribute.
-8. **Operational recommendation (unvalidated policy suggestion, not a benchmark-derived quality winner):** default worker = LOCAL_QWEN_Q3; cheapest observed cloud option = LUNA_MAX; DEEPSEEK is a reliable alternate; Terra Medium, GLM, or Sonnet 5 are speed-oriented options only when their latency/capability policy justifies their higher observed cost. No slot earned a demonstrated quality-based escalation in this ceiling-effect sample.
+8. **Operational recommendation (unvalidated policy suggestion, not a benchmark-derived quality winner):** default worker = LOCAL_QWEN_Q3; cheapest observed cloud option = LUNA_MAX; DEEPSEEK is an observed 6/6 alternate; Terra Medium, GLM, or Sonnet 5 are speed-oriented options only when their latency/capability policy justifies their higher observed cost. No slot earned a demonstrated quality-based escalation in this ceiling-effect sample.
 
 ## Review note
 
